@@ -1,5 +1,6 @@
-
+/***** MAIN SETTING ******/
 body, html {
+    font-family: 'Noto Sans KR', sans-serif;
     height: 100%;
     margin: 0;
 }
@@ -9,6 +10,7 @@ a {
     text-decoration-line: none;
 }
 
+/***** HEADER ******/
 header {
     width: 100%;
     background-color: #000000de;
@@ -43,6 +45,7 @@ footer {
     text-align: center;
 }
 
+/***** GRID ******/
 .grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -52,7 +55,8 @@ footer {
     grid-gap: 10px;
 }
 
-.grid-item1 {
+/***** SSCC ******/
+.gomtv {
     background-image: url("../images/gomtv/1.jpg");
     background-size: cover;
     background-position: center;
@@ -60,15 +64,15 @@ footer {
     grid-row: 1/3;
 }
 
-.grid-item2x {
-    background-image: url("../images/farewell/1.jpg");
-    background-size: cover;
-    background-position: center;
-    grid-column: 1/2;
-    grid-row: 2/5;
+.gomtv:hover {
+    transform: scale(1.1) translate(7%, 7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
 }
 
-.grid-item3 {
+.ict {
     background-image: url("../images/hwasungICT/1.jpg");
     background-size: cover;
     background-position: center;
@@ -76,7 +80,15 @@ footer {
     grid-row: 5/7;
 }
 
-.grid-item4 {
+.ict:hover {
+    transform: scale(1.1) translate(0%, -7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.smartfarm_ideaton {
     background-image: url("../images/smartfarm ideaton/1.jpg");
     background-size: cover;
     background-position: center;
@@ -84,7 +96,15 @@ footer {
     grid-row: 3/7;
 }
 
-.grid-item5 {
+.smartfarm_ideaton:hover {
+    transform: scale(1.05) translate(5%, -5%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.smartfarm {
     background-image: url("../images/smartfarm/1.jpg");
     background-size: cover;
     background-position: center;
@@ -92,12 +112,15 @@ footer {
     grid-row: 1/3;
 }
 
-.grid-item5x {
-    grid-column: 3/6;
-    grid-row: 1/3;
+.smartfarm:hover {
+    transform: scale(1.1) translate(0%, 7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
 }
 
-.grid-item6 {
+.logo {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -106,7 +129,7 @@ footer {
     grid-row: 3/5;
 }
 
-.grid-item7 {
+.wiki {
     background-image: url("../images/wiki/1.png");
     background-size: contain;
     background-position: center;
@@ -114,19 +137,41 @@ footer {
     grid-row: 5/7;
 }
 
-    .grid-item7:hover {
-        transform: scale(1.1) translate(-7%, -7%);
-        transition: .5s;
-        border: #6e6e6e;
-        filter: blur(1px);
-        -webkit-filter: blur(1px);
-    }
+.wiki:hover {
+    transform: scale(1.1) translate(-7%, -7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
 
-.grid-ap {
+.ap_ideaton {
     background-image: url("../images/ap_tech ideaton/1.jpg");
     background-size: cover;
     background-position: center;
     grid-column: 6/9;
     grid-row: 1/5;
     text-align: center;
+}
+
+.ap_ideaton:hover {
+    transform: scale(1.05) translate(-5%, 5%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+/***** Legacy ******/
+.grid-item2x {
+    background-image: url("../images/farewell/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.grid-item5x {
+    grid-column: 3/6;
+    grid-row: 1/3;
 }
