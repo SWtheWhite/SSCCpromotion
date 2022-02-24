@@ -5,6 +5,10 @@ body, html {
     margin: 0;
 }
 
+h2{
+    margin: 0;
+}
+
 a {
     color: aliceblue;
     text-decoration-line: none;
@@ -164,6 +168,16 @@ footer {
     -webkit-filter: blur(1px);
 }
 
+/***** About ******/
+.multi section{
+    column-count : 2;
+}
+.multi h2{
+  break-before : column;
+}
+.no-col{
+  column-span : all;
+}
 
 /***** Study ******/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
