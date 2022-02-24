@@ -155,13 +155,15 @@ footer {
     text-align: center;
 }
 
-
-
-
+.ap_ideaton:hover {
+    transform: scale(1.05) translate(-5%, 5%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-
 
 .study-card body {
     background-color: grey;
@@ -250,4 +252,18 @@ footer {
     padding-bottom: 100px;
     font-size: 50pt;
     font-family: Montserrat, sans-serif;
+}
+
+/***** Legacy ******/
+.grid-item2x {
+    background-image: url("../images/farewell/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.grid-item5x {
+    grid-column: 3/6;
+    grid-row: 1/3;
 }
