@@ -16,13 +16,11 @@ header {
     background-color: #000000de;
 }
 
-/***** FOOTER ******/
-footer {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.floating {
+    color: aliceblue;
+    position: fixed;
     text-align: center;
+    top: 0;
 }
 
 .table {
@@ -39,12 +37,15 @@ footer {
     vertical-align: middle;
 }
 
-.floating {
-    color: aliceblue;
-    position: fixed;
+/***** FOOTER ******/
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    top: 0;
 }
+
 
 /***** GRID ******/
 .grid {
@@ -163,6 +164,8 @@ footer {
     -webkit-filter: blur(1px);
 }
 
+
+/***** Study ******/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .study-card body {
