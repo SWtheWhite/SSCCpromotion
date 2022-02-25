@@ -16,61 +16,53 @@
 </head>
 
 <body>
+    <!--Header-->
     <header class="floating">
-        <div class="table" style="height: 100px;">
-            <div class="table-row"></div>
-            <div class="table-cell" style="text-align: left;">
+        <div class="title" style="text-align: left;">
+            <img src="images/logo.png" style="height:30px; margin-top: 8px; margin-left: 30px;"></img>
 
-                <div class="table-cell" style="text-align: left;">
-                    <img src="images/logo.png" style="height:30px; margin-top: 8px; margin-left: 30px;"></img>
-                </div>
 
-                <div class="table-cell" style="text-align: left;">
-                    <span style="color:aliceblue; font-size: 40px; margin-left: 15px;">
-                        <b>SSCC</b>
-                    </span>
-                </div>
-
-            </div>
-
-            <div class="table-cell" style="text-align: right;">
-                <span style="font-size: 20px; margin-right: 20px;">
-                    <a href="#About">About</a>&nbsp;
-                    <a href="#Study">Study</a>&nbsp;
-                    <a href="#Benefit">Benefit</a>&nbsp;
-                    <a href="#Contact">Contact</a>
-                </span>
-            </div>
+            <a href="#SSCC" style="color:aliceblue; font-size: 40px; margin-left: 15px;">
+                <b>SSCC</b>
+            </a>
         </div>
 
-
+        <div class="lists" style="text-align: right;">
+            <span style="font-size: 20px; margin-right: 20px;">
+                <a href="#About">About</a>&nbsp;
+                <a href="#Study">Study</a>&nbsp;
+                <a href="#Benefit">Benefit</a>&nbsp;
+                <a href="#Contact">Contact</a>
+            </span>
+        </div>
     </header>
+
     <div class="container" style="height: 100%;">
-        <div style="height: 100px; background-color: black;"></div>
 
         <!--SSCC page-->
-        <div class="grid" id="SSCC" style="background-color: black;">
-            <div class="logo">
-                <img src="images/logo/1.png" style="max-height: 100%; max-width: 100%;">
+        <div class="page" id="SSCC" style="background-color: black; padding-bottom: 0; height: 90%;">
+            <div class="collage">
+                <div class="logo">
+                    <img src="images/logo/1.png" style="max-height: 100%; max-width: 100%;">
+                </div>
+                <div class="gomtv"></div>
+                <div class="ict"></div>
+                <div class="smartfarm_ideaton"></div>
+                <div class="smartfarm"></div>
+                <div class="wiki"></div>
+                <div class="ap_ideaton"></div>
             </div>
-            <div class="gomtv"></div>
-            <div class="ict"></div>
-            <div class="smartfarm_ideaton"></div>
-            <div class="smartfarm"></div>
-            <div class="wiki"></div>
-            <div class="ap_ideaton"></div>
         </div>
 
         <!--About page-->
-        <div id="About" style="background-color: #222222; height: 100%;">
-            <h2 style="text-align: center;">About</h2>
-            </h1>
+        <div class="page" id="About" style="background-color: black; height: 60%;">
+            <h2 style="color: aliceblue;">About</h2>
             <div style="width:50%; height:auto; float: left;">
                 <img src="http://www.sscc.space/image/3f1ca80e2f253bedd0ba563bad2e718d715e14f695b163b9a3c65e80.png"
                     alt="img" />
             </div>
             <div style="width:50%; height:100%; float: right;">
-                <p>
+                <p style="color: aliceblue">
                     숭실대학교 첫 컴퓨터 동아리 SSCC <br>SoongSilComputingClub은 ~<br><br><br><br><br><br><br><br>
                     <br<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </p>
@@ -81,10 +73,8 @@
         </div>
 
         <!--Study 페이지-->
-        <div class="study-title">
+        <div class="page" id="Study" style="background-color: #222222;">
             <h2>Study</h2>
-        </div>
-        <div class="grid" id="Study" style="background-color: #6e6e6e;">
 
             <div class="study-card">
                 <div class="card-container">
@@ -173,8 +163,8 @@
         </div>
 
         <!--Benefit page-->
-        <div class="Benefit" style="background-color: #222222;">
-            <h2>Benefits</h2>
+        <div class="page" id="Benefit" style="background-color: #6e6e6e;">
+            <h2>Benefit</h2>
             <p>
                 선후배 공부 프로젝트 공모전 동아리방<br>
                 컴퓨터 프린터 충전기 침대 냉장고<br>
@@ -185,22 +175,19 @@
         </div>
 
         <!--Contact page-->
-        <div id="Contact" style="background-color: #d3d3d3;">
-            <h1> <u> <strong>
-                        <p style="text-align:center;"> CONTACT </p>
-                    </strong> </u> </h1>
-            <div>
-                <img src="images/ssuMap.png" style="max-width: 100%; height: auto;">
-            </div>
+        <div class="page" style="background-color: #d3d3d3;">
+            <h2>Contact</h2>
 
+            <img src="images/ssuMap.png" style="max-width: 100%; height: auto;">
 
             <div class="multi">
-                <h2>오시는 길<br></h2>
+                <h3>오시는 길<br></h3>
                 <h4>서울특별시 동작구 상도로 숭실대학교 학생회관 3층 <br><br><br></h4>
                 <h5>Tel : 010 - 0000 - 0000 <br> <br>@SSCC_SSU</h5>
-                <h2>가입 문의 <br></h2>
+                <h3>가입 문의 <br></h3>
                 <h4><u>구글폼링크</u></h4>
             </div>
+
         </div>
 
         <!--Footer-->
