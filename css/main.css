@@ -168,6 +168,43 @@ footer {
 /***** Study ******/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+#Study {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+}
+
+
+.study-card {
+
+}
+
+    .study-card body {
+        background-color: grey;
+        font-family: Montserrat, sans-serif;
+    }
+
+.card-container {
+    background-color: white;
+    border-radius: 5px;
+    color: #B3B8CD;
+    box-shadow: 0px 10px 20px -10px black;
+    padding-top: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 40px;
+}
+ 
+.study-contents {
+    position: absolute;
+    top: 200px;
+}
+
+/* 瘤快瘤 富酒林技夸ばばばば
+.study-card {
+   
+    
+}
+
 .study-card body {
     background-color: grey;
     font-family: Montserrat, sans-serif;
@@ -178,6 +215,21 @@ footer {
     min-height: 100vh;
     margin: 0;
 }
+
+.card-container {
+    background-color: white;
+    border-radius: 5px;
+    color: #B3B8CD;
+    box-shadow: 0px 10px 20px -10px black;
+    padding-top: 30px;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 50px;
+}
+*/
 
 .study-card h3 {
     margin: 10px 0;
@@ -193,26 +245,14 @@ footer {
     line-height: 21px;
 }
 
-.card-container {
-    background-color: white;
-    border-radius: 5px;
-    color: #B3B8CD;
-    box-shadow: 0px 10px 20px -10px black;
-    padding-top: 30px;
-    position: static;
-    width: 350px;
-    max-width: 100%;
-    text-align: center;
-    vertical-align: middle;
-    margin: 50px;
-}
-
 
 
     .card-container .picture {
         border: 1px solid #03BFCB;
         border-radius: 5%;
         padding: 7px;
+        position: inherit;
+        width: 70%;
     }
 
 
@@ -238,13 +278,6 @@ footer {
             margin: 0 7px 7px 0;
             padding: 7px;
         }
-
-
-#Study {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: none;
-    
-}
 
 .study-title h2 {
     background-color: #6e6e6e;
