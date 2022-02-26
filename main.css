@@ -1,0 +1,321 @@
+/***** MAIN SETTING ******/
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    font-size: 50pt;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    color: aliceblue;
+    text-decoration-line: none;
+}
+
+/** Collage **/
+.collage {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-gap: 10px;
+}
+
+
+/** PAGE **/
+.page {
+    padding-top: 100px;
+    background-clip: padding-box;
+    padding-bottom: 200px;
+}
+
+#About {
+    padding-top: 200;
+    display : grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#About .image{
+    padding: 25px;
+}
+
+#About p{
+    padding: 25px;
+    color: white;
+    margin: 0;
+}
+
+
+/***** HEADER ******/
+header {
+    width: 100%;
+    background-color: #000000de;
+}
+
+.floating {
+    color: aliceblue;
+    position: fixed;
+    text-align: center;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    grid-column: 1/4;
+}
+
+.lists {
+    grid-column: 4/9;
+}
+
+/***** FOOTER ******/
+footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/***** SSCC ******/
+.gomtv {
+    background-image: url("../images/gomtv/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.gomtv:hover {
+    transform: scale(1.1) translate(7%, 7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.ict {
+    background-image: url("../images/hwasungICT/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 4/7;
+    grid-row: 5/7;
+}
+
+.ict:hover {
+    transform: scale(1.1) translate(0%, -7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.smartfarm_ideaton {
+    background-image: url("../images/smartfarm ideaton/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/4;
+    grid-row: 3/7;
+}
+
+.smartfarm_ideaton:hover {
+    transform: scale(1.05) translate(5%, -5%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.smartfarm {
+    background-image: url("../images/smartfarm/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/6;
+    grid-row: 1/3;
+}
+
+.smartfarm:hover {
+    transform: scale(1.1) translate(0%, 7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    grid-column: 4/6;
+    grid-row: 3/5;
+}
+
+.wiki {
+    background-image: url("../images/wiki/1.png");
+    background-size: contain;
+    background-position: center;
+    grid-column: 7/9;
+    grid-row: 5/7;
+}
+
+.wiki:hover {
+    transform: scale(1.1) translate(-7%, -7%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+.ap_ideaton {
+    background-image: url("../images/ap_tech ideaton/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 6/9;
+    grid-row: 1/5;
+    text-align: center;
+}
+
+.ap_ideaton:hover {
+    transform: scale(1.05) translate(-5%, 5%);
+    transition: .5s;
+    border: #6e6e6e;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+
+/***** Study ******/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+#Study {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+
+}
+
+
+
+/** CARD **/
+.card-container {
+    background-color: white;
+    border-radius: 5px;
+    color: #B3B8CD;
+    box-shadow: 0px 10px 20px -10px black;
+    padding-top: 30px;
+    position: static;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 50px;
+}
+
+.card-container .picture {
+        border: 1px solid #03BFCB;
+        border-radius: 5%;
+        padding: 7px;
+}
+
+.study-card body {
+    background-color: grey;
+    font-family: Montserrat, sans-serif;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.study-card h3 {
+    margin: 10px 0;
+}
+
+.study-card h6 {
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.study-card p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+.skills {
+    background-color: #1F1A36;
+    text-align: left;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+    .skills ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .skills ul li {
+            border: 1px solid #2D2747;
+            border-radius: 2px;
+            display: inline-block;
+            font-size: 12px;
+            margin: 0 7px 7px 0;
+            padding: 7px;
+        }
+
+/***** Benefit ******/
+#Benefit {
+    display: grid;
+    font-size: 30pt;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/***** Contact ******/
+.multi section{
+    column-count : 2;
+}
+.multi h2{
+  break-before : column;
+}
+.no-col{
+  column-span : all;
+}
+
+/***** Legacy ******/
+.grid-item2x {
+    background-image: url("../images/farewell/1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 2/5;
+}
+
+.grid-item5x {
+    grid-column: 3/6;
+    grid-row: 1/3;
+}
+
+.page img{
+  padding : 25px;
+}
+.contact{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding : 25px;
+}
