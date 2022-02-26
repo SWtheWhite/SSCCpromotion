@@ -263,7 +263,7 @@ footer {
 */
 
 /*스터디 카드 미디어쿼리 적용중*/
-@media (max-width:700px) {
+@media (max-width:900px) {
     #Study {
         display: block;
         grid-template-columns: none;
