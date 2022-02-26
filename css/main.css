@@ -185,7 +185,6 @@ footer {
 #Study {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
-<<<<<<< HEAD
 }
 
 
@@ -198,20 +197,15 @@ footer {
         font-family: Montserrat, sans-serif;
     }
 
-=======
-    
-}
 
 
 /** CARD **/
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 .card-container {
     background-color: white;
     border-radius: 5px;
     color: #B3B8CD;
     box-shadow: 0px 10px 20px -10px black;
     padding-top: 30px;
-<<<<<<< HEAD
     text-align: center;
     vertical-align: middle;
     margin: 40px;
@@ -239,7 +233,6 @@ footer {
         border: 1px solid #03BFCB;
         border-radius: 5%;
         padding: 7px;
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 }
 
 .study-card body {
@@ -282,7 +275,6 @@ footer {
     line-height: 21px;
 }
 
-<<<<<<< HEAD
 
 
     .card-container .picture {
@@ -294,8 +286,6 @@ footer {
     }
 
 
-=======
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 
 .skills {
     background-color: #1F1A36;
@@ -319,7 +309,6 @@ footer {
             padding: 7px;
         }
 
-<<<<<<< HEAD
 .study-title h2 {
     background-color: #6e6e6e;
     background-clip: padding-box;
@@ -329,8 +318,10 @@ footer {
     padding-bottom: 100px;
     font-size: 50pt;
     font-family: Montserrat, sans-serif;
-=======
+}
+
 /***** Benefit ******/
+
 #Benefit {
     display: grid;
     font-size: 30pt;
@@ -348,7 +339,6 @@ footer {
 }
 .no-col{
   column-span : all;
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 }
 
 /***** Legacy ******/
