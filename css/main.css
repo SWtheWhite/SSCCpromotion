@@ -183,6 +183,7 @@ footer {
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 #Study {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
 }
@@ -261,6 +262,15 @@ footer {
 }
 */
 
+/*스터디 카드 미디어쿼리 적용중*/
+@media (max-width:700px) {
+    #Study {
+        display: block;
+        grid-template-columns: none;
+        grid-template-rows: none;
+    }
+} 
+
 .study-card h3 {
     margin: 10px 0;
 }
@@ -309,8 +319,8 @@ footer {
             padding: 7px;
         }
 
-.study-title h2 {
-    background-color: #6e6e6e;
+#study-title {
+    background-color: #222222;
     background-clip: padding-box;
     margin: 0;
     text-align: center;
