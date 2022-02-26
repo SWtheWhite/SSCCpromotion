@@ -17,16 +17,13 @@ a {
     text-decoration-line: none;
 }
 
-/** Collage **/
-.collage {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    width: 100%;
-    height: 100%;
-    grid-gap: 10px;
+.explain{
+    position: absolute;
+    opacity: 0;
+    color: white;
+    font-size: 20pt;
+    text-shadow: -1px 0 #00000088, 0 1px #00000088, 1px 0 #00000088, 0 -1px #00000088;
 }
-
 
 /** PAGE **/
 .page {
@@ -34,6 +31,10 @@ a {
     background-clip: padding-box;
     padding-bottom: 200px;
 }
+
+.page img{
+    padding : 25px;
+  }
 
 /***** HEADER ******/
 header {
@@ -73,7 +74,22 @@ footer {
 }
 
 /***** SSCC ******/
+
+/** Collage **/
+.collage {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+    height: 100%;
+    grid-gap: 10px;
+}
+
 .gomtv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/gomtv/1.jpg");
     background-size: cover;
     background-position: center;
@@ -85,11 +101,19 @@ footer {
     transform: scale(1.1) translate(7%, 7%);
     transition: .5s;
     border: #6e6e6e;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.gomtv:hover .explain{
+    opacity: 1;
 }
 
 .ict {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/hwasungICT/1.jpg");
     background-size: cover;
     background-position: center;
@@ -101,11 +125,19 @@ footer {
     transform: scale(1.1) translate(0%, -7%);
     transition: .5s;
     border: #6e6e6e;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.ict:hover .explain{
+    opacity: 1;
 }
 
 .smartfarm_ideaton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/smartfarm ideaton/1.jpg");
     background-size: cover;
     background-position: center;
@@ -117,11 +149,19 @@ footer {
     transform: scale(1.05) translate(5%, -5%);
     transition: .5s;
     border: #6e6e6e;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.smartfarm_ideaton:hover .explain{
+    opacity: 1;
 }
 
 .smartfarm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/smartfarm/1.jpg");
     background-size: cover;
     background-position: center;
@@ -133,8 +173,12 @@ footer {
     transform: scale(1.1) translate(0%, 7%);
     transition: .5s;
     border: #6e6e6e;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.smartfarm:hover .explain{
+    opacity: 1;
 }
 
 .logo {
@@ -147,6 +191,10 @@ footer {
 }
 
 .wiki {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/wiki/1.png");
     background-size: contain;
     background-position: center;
@@ -158,11 +206,19 @@ footer {
     transform: scale(1.1) translate(-7%, -7%);
     transition: .5s;
     border: #6e6e6e;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.wiki:hover .explain{
+    opacity: 1;
 }
 
 .ap_ideaton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url("../images/ap_tech ideaton/1.jpg");
     background-size: cover;
     background-position: center;
@@ -175,8 +231,29 @@ footer {
     transform: scale(1.05) translate(-5%, 5%);
     transition: .5s;
     border: #6e6e6e;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
+    filter: brightness(0.5);
+    -webkit-filter: brightness(0.5);
+}
+
+.ap_ideaton:hover .explain{
+    opacity: 1;
+}
+
+/***** About ******/
+#About {
+    padding-top: 200;
+    display : grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#About .image{
+    padding: 25px;
+}
+
+#About p{
+    padding: 25px;
+    color: white;
+    margin: 0;
 }
 
 /***** Study ******/
@@ -217,7 +294,7 @@ footer {
     top: 200px;
 }
 
-/* Áö¿ìÁö ¸»¾ÆÁÖ¼¼¿ä¤Ð¤Ð¤Ð¤Ð
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½Ð¤Ð¤Ð¤ï¿½
 .study-card {
    
     
@@ -262,7 +339,7 @@ footer {
 }
 */
 
-/*½ºÅÍµð Ä«µå ¹Ìµð¾îÄõ¸® Àû¿ëÁß*/
+/*ï¿½ï¿½ï¿½Íµï¿½ Ä«ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 @media (max-width:900px) {
     #Study {
         display: block;
@@ -341,6 +418,13 @@ footer {
 }
 
 /***** Contact ******/
+
+.contact{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding : 25px;
+}
 .multi section{
     column-count : 2;
 }
