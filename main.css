@@ -35,6 +35,23 @@ a {
     padding-bottom: 200px;
 }
 
+#About {
+    padding-top: 200;
+    display : grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#About .image{
+    padding: 25px;
+}
+
+#About p{
+    padding: 25px;
+    color: white;
+    margin: 0;
+}
+
+
 /***** HEADER ******/
 header {
     width: 100%;
@@ -185,48 +202,18 @@ footer {
 #Study {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
-<<<<<<< HEAD
-}
-
-
-.study-card {
 
 }
 
-    .study-card body {
-        background-color: grey;
-        font-family: Montserrat, sans-serif;
-    }
-
-=======
-    
-}
 
 
 /** CARD **/
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 .card-container {
     background-color: white;
     border-radius: 5px;
     color: #B3B8CD;
     box-shadow: 0px 10px 20px -10px black;
     padding-top: 30px;
-<<<<<<< HEAD
-    text-align: center;
-    vertical-align: middle;
-    margin: 40px;
-}
- 
-.study-contents {
-    position: absolute;
-    top: 200px;
-}
-
-/* 瘤快瘤 富酒林技夸ばばばば
-.study-card {
-   
-    
-=======
     position: static;
     width: 350px;
     max-width: 100%;
@@ -239,7 +226,6 @@ footer {
         border: 1px solid #03BFCB;
         border-radius: 5%;
         padding: 7px;
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 }
 
 .study-card body {
@@ -252,21 +238,6 @@ footer {
     min-height: 100vh;
     margin: 0;
 }
-
-.card-container {
-    background-color: white;
-    border-radius: 5px;
-    color: #B3B8CD;
-    box-shadow: 0px 10px 20px -10px black;
-    padding-top: 30px;
-    position: relative;
-    width: 350px;
-    max-width: 100%;
-    text-align: center;
-    vertical-align: middle;
-    margin: 50px;
-}
-*/
 
 .study-card h3 {
     margin: 10px 0;
@@ -282,20 +253,6 @@ footer {
     line-height: 21px;
 }
 
-<<<<<<< HEAD
-
-
-    .card-container .picture {
-        border: 1px solid #03BFCB;
-        border-radius: 5%;
-        padding: 7px;
-        position: inherit;
-        width: 70%;
-    }
-
-
-=======
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 
 .skills {
     background-color: #1F1A36;
@@ -319,17 +276,6 @@ footer {
             padding: 7px;
         }
 
-<<<<<<< HEAD
-.study-title h2 {
-    background-color: #6e6e6e;
-    background-clip: padding-box;
-    margin: 0;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    font-size: 50pt;
-    font-family: Montserrat, sans-serif;
-=======
 /***** Benefit ******/
 #Benefit {
     display: grid;
@@ -348,7 +294,6 @@ footer {
 }
 .no-col{
   column-span : all;
->>>>>>> 66e04b8beadc6597704be7ddff0d51f0c47119cd
 }
 
 /***** Legacy ******/
@@ -363,4 +308,14 @@ footer {
 .grid-item5x {
     grid-column: 3/6;
     grid-row: 1/3;
+}
+
+.page img{
+  padding : 25px;
+}
+.contact{
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding : 25px;
 }
