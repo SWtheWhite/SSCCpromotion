@@ -297,7 +297,7 @@ footer {
     padding-top: 30px;
     text-align: center;
     vertical-align: middle;
-    margin: 65px;
+    margin: 10%;
 }
  
 .study-contents {
@@ -312,6 +312,15 @@ footer {
         display: block;
         grid-template-columns: none;
         grid-template-rows: none;
+    }
+
+    #Study p {
+        font-size: 13pt;
+        line-height: 1.3em;       
+    }
+
+    .card-container {
+        margin: 15%;
     }
 } 
 
@@ -333,8 +342,8 @@ footer {
 }
 
 .study-card p {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 0.75vw;
+    line-height: 1.3em;
     color: #6d6a8a;
 }
 
