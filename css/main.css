@@ -317,16 +317,25 @@ footer {
 
 .study-card h3 {
     margin: 10px 0;
+    color: black;
 }
 
 .study-card h6 {
     margin: 5px 0;
+    text-transform: uppercase;
+    color: black;
+}
+
+.study-card h4 {
+    font-size: 9px;
+    margin: 5px;
     text-transform: uppercase;
 }
 
 .study-card p {
     font-size: 14px;
     line-height: 21px;
+    color: #6d6a8a;
 }
 
 
