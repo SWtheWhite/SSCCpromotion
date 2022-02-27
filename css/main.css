@@ -453,9 +453,6 @@ footer {
         font-size: 6vw;
     }
     .collage {
-        display: none;
-        grid-template-columns: none;
-        grid-template-rows: none;
     }
     .about_grid {
         display: block;
