@@ -445,6 +445,10 @@ footer {
     .title img{
         display: none;
     }
+
+    .lists{
+        display: none;
+    }
     h2{
         font-size: 6vw;
     }
