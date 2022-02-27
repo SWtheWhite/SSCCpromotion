@@ -240,20 +240,22 @@ footer {
 }
 
 /***** About ******/
-#About {
-    padding-top: 200;
+.aboutgrid {
+    padding-top: 200px;
     display : grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
 }
 
-#About .image{
+.about_image{
     padding: 25px;
+    grid-column: 2/4;
 }
 
-#About p{
+.about_text{
     padding: 25px;
     color: white;
-    margin: 0;
+    grid-column: 4/6;
 }
 
 /***** Study ******/
@@ -419,21 +421,13 @@ footer {
 
 /***** Contact ******/
 
-.contact{
+.contactgrid{
     font-size: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding : 25px;
 }
-.multi section{
-    column-count : 2;
-}
-.multi h2{
-  break-before : column;
-}
-.no-col{
-  column-span : all;
-}
+
 
 /***** Legacy ******/
 .grid-item2x {
@@ -447,4 +441,14 @@ footer {
 .grid-item5x {
     grid-column: 3/6;
     grid-row: 1/3;
+}
+
+.multi section{
+    column-count : 2;
+}
+.multi h2{
+  break-before : column;
+}
+.no-col{
+  column-span : all;
 }
