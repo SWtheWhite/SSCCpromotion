@@ -452,8 +452,7 @@ footer {
     h2{
         font-size: 6vw;
     }
-    .collage {
-    }
+    
     .about_grid {
         display: block;
         grid-template-columns: none;
