@@ -375,6 +375,10 @@ footer {
     vertical-align: middle;
 }
 
+    #Benefit p {
+        line-height: 1.9em
+    }
+
 /***** Contact ******/
 
 #Contact.page {
