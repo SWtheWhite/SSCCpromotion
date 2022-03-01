@@ -1,86 +1,9 @@
-.slider{
-    width: 100%;
-    height: 300px;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden; /* 현재 슬라이드 오른쪽에 위치한 나머지 슬라이드 들이 보이지 않도록 가림 */
-    display: none;
-}
-.slider input[type=radio]{
-    display: none;
-}
-
-ul.imgs{
-
-    padding: 0;
-    list-style: none;    
-}
-ul.imgs li{
-    position: absolute;
-    left: 640px;
-    transition-delay: 1s; /* 새 슬라이드가 이동해 오는 동안 이전 슬라이드 이미지가 배경이 보이도록 지연 */
-
-    padding: 0;
-    margin: 0;
-}
-ul.imgs li img{
-    width: 100%;
-    object-fit: cover;
-}
-.bullets{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    z-index: 2;
-}
-.bullets label{
-    display: inline-block;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,0.55);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-}
-/* 현재 선택된 불릿 배경 흰색으로 구분 표시 */
-.slider input[type=radio]:nth-child(1):checked~.bullets>label:nth-child(1){
-    background-color: #fff;
-}
-.slider input[type=radio]:nth-child(2):checked~.bullets>label:nth-child(2){
-    background-color: #fff;
-}
-.slider input[type=radio]:nth-child(3):checked~.bullets>label:nth-child(3){
-    background-color: #fff;
-}
-.slider input[type=radio]:nth-child(4):checked~.bullets>label:nth-child(4){
-    background-color: #fff;
-}
-.slider input[type=radio]:nth-child(1):checked~ul.imgs>li:nth-child(1){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
-}
-.slider input[type=radio]:nth-child(2):checked~ul.imgs>li:nth-child(2){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
-}
-.slider input[type=radio]:nth-child(3):checked~ul.imgs>li:nth-child(3){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
-}
-.slider input[type=radio]:nth-child(4):checked~ul.imgs>li:nth-child(4){
-    left: 0;
-    transition: 0.5s;
-    z-index:1;
-}
-
 /***** MAIN SETTING ******/
 body, html {
     font-family: 'Noto Sans KR', sans-serif;
     height: 100%;
     margin: 0;
+    user-select : none;
 }
 
 h2{
@@ -105,14 +28,16 @@ a {
 
 /** PAGE **/
 .page {
-    padding-top: 100px;
+    padding-top: 10%;
     background-clip: padding-box;
     width: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 20%;
 }
 
 .page img{
-    max-height: 100%; max-width: 100%;
+    -webkit-user-drag: none;
+    max-height: 100%;
+    max-width: 100%;
   }
 
 
@@ -127,7 +52,7 @@ header {
     position: fixed;
     text-align: center;
     top: 0;
-    z-index: 1;
+    z-index: 10;
 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -157,8 +82,8 @@ footer {
 /***** SSCC ******/
 #SSCC.page  {
     background-color: black;
+    padding-top: 100px;
     padding-bottom: 0;
-    height: 90%;
 }
 
 /** Collage **/
@@ -271,7 +196,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: aliceblue;
+    background-color: black;
     grid-column: 4/6;
     grid-row: 3/5;
 }
@@ -324,10 +249,92 @@ footer {
 .ap_ideaton:hover .explain{
     opacity: 1;
 }
+/** Slide **/
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .slide {
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+    
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
 /***** About ******/
 #About.page {
-    padding-bottom : 250px;
+    background-color: black;
 }
 .about_grid {
     padding-top: 100px;
@@ -480,6 +487,9 @@ footer {
     grid-column: 3/5;
     grid-row: 1/2;
 }
+.contact_image img:hover{
+    filter: brightness(0.5);
+}
 
 .contact_way {
     grid-row: 2/3;
@@ -517,7 +527,9 @@ footer {
 .no-col{
   column-span : all;
 }
-
+.ACT {
+    display: none;
+}
 /** media-query **/
 @media (max-width: 1000px) {
     .title img{
@@ -530,10 +542,13 @@ footer {
     h2{
         font-size: 17vw;
     }
+    #SSCC.page{
+        height: none;
+    }
     .collage{
         display: none;
     }
-    .slider{
+    .ACT {
         display: block;
     }
     
@@ -542,6 +557,7 @@ footer {
         grid-template-columns: none;
         grid-template-rows: none;
         text-align: center;
+        height:100%;
     }
     .study_grid {
         display: block;
@@ -565,4 +581,9 @@ footer {
         text-align: center;
     }
 
-} 
+}
+@media (min-width: 1000px) {
+    #SSCC.page{
+        height: 90%;
+    }
+}
