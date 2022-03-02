@@ -28,10 +28,10 @@ a {
 
 /** PAGE **/
 .page {
-    padding-top: 10%;
+    padding-top: 5%;
     background-clip: padding-box;
     width: 100%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
 }
 
 .page img{
@@ -69,6 +69,55 @@ header {
 .lists {
     grid-column: 4/9;
 }
+
+/* The sidepanel menu */
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 11; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  }
+  
+  /* The sidepanel links */
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 70%;
+    font-size: 36px;
+    margin-left: 5%;
+  }
+  
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    grid-column: 8/9;
+    width: 100%;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: #00000000;
+    color: white;
+    border: none;
+  }
 
 /***** FOOTER ******/
 footer {
@@ -196,7 +245,7 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: black;
+    background-color: aliceblue;
     grid-column: 4/6;
     grid-row: 3/5;
 }
@@ -335,8 +384,6 @@ footer {
 /***** About ******/
 #About.page {
     background-color: black;
-    padding-bottom:0;
-
 }
 .about_grid {
     padding-top: 100px;
@@ -418,7 +465,6 @@ footer {
 
 
     .card-container .picture {
-        border: 1px solid #03BFCB;
         border-radius: 5%;
         padding: 7px;
         position: inherit;
@@ -456,7 +502,7 @@ footer {
     color: whitesmoke;
     padding-bottom: 0;
     font-family: Montserrat, sans-serif;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 
@@ -498,12 +544,12 @@ footer {
 
 .contact_way {
     grid-row: 2/3;
-    grid-column: 2/4;
+    grid-column: 4/6;
 }
 
 .contact_link {
     grid-row: 2/3;
-    grid-column: 4/6;
+    grid-column: 2/4;
 }
 
 .contact_link a:link{
@@ -511,12 +557,12 @@ footer {
     text-decoration: none;
 }
 
-.contact_link a:visited{
+.contact_way a:visited{
     color:gray;
     text-decoration: none;
 }
 
-.contact_link a:hover{
+.contact_way a:hover{
     color:pink;
     text-decoration: none;
 }
@@ -550,6 +596,9 @@ footer {
 }
 /** media-query **/
 @media (max-width: 1000px) {
+    .floating{
+        border-bottom: solid aliceblue;
+    }
     .title img{
         display: none;
     }
@@ -612,6 +661,9 @@ footer {
 }
 @media (min-width: 1000px) {
     #SSCC.page{
-        height: 90%;
+        height: 95%;
+    }
+    .openbtn{
+        display: none;
     }
 }
