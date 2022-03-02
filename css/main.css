@@ -362,7 +362,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 800px;
-    place-items: center;
 }
 
     .study-card body {
@@ -407,8 +406,8 @@ footer {
 }
 
 .study-card p {
-    font-size: 0.75vw;
-    line-height: 1.3em;
+    font-size: 0.8vw;
+    line-height: 1.5em;
     color: #6d6a8a;
 }
 
@@ -441,7 +440,7 @@ footer {
             border: 1px solid #2D2747;
             border-radius: 2px;
             display: inline-block;
-            font-size: 12px;
+            font-size: 0.1vw;
             margin: 0 7px 7px 0;
             padding: 7px;
         }
@@ -453,7 +452,9 @@ footer {
     color: whitesmoke;
     padding-bottom: 0;
     font-family: Montserrat, sans-serif;
+    margin-bottom: 10%;
 }
+
 
 /***** Benefit ******/
 
@@ -574,13 +575,23 @@ footer {
     .card-container {
         margin: 10%;
     }
-    .contact_grid {
-        display: block;
-        grid-template-columns: none;
-        grid-template-rows: none;
-        text-align: center;
+        .card-container p {
+            font-size: 3vw;
+        }
+        .contact_grid {
+            display: block;
+            grid-template-columns: none;
+            grid-template-rows: none;
+            text-align: center;
+        }
+        
+    #Benefit p {
+        font-size: 5vw;
+        margin-bottom: 10%;
     }
-
+    #Benefit h2 {
+        margin-bottom: 10%;
+    }
 }
 @media (min-width: 1000px) {
     #SSCC.page{
