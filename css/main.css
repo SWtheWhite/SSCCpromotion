@@ -255,7 +255,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url("../images/wiki/1.png");
+    background-image: url("../images/wiki/1.jpg");
     background-size: contain;
     background-position: center;
     grid-column: 7/9;
@@ -518,11 +518,6 @@ footer {
     margin-bottom: 5%;
 }
 
-@media (min-width: 1460px) {
-    .line-change {
-        display: none;
-    }
-}
 
 /***** Benefit ******/
 
@@ -544,6 +539,7 @@ footer {
     background-color: #d3d3d3;
     padding-bottom : 50px;
 }
+
 .contact_grid {
     display : grid;
     grid-template-columns: repeat(6, 1fr);
@@ -552,12 +548,20 @@ footer {
 }
 
 .contact_image {
-    text-align :center ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../images/ssuMap.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
     grid-column: 3/5;
     grid-row: 1/2;
 }
-.contact_image img:hover{
-    filter: brightness(0.5);
+.contact_image:hover{
+    background-image: url("../images/ssuMap_hover.jpg");
 }
 
 .contact_way {
@@ -575,12 +579,12 @@ footer {
     text-decoration: none;
 }
 
-.contact_way a:visited{
+.contact_grid a:visited{
     color:gray;
     text-decoration: none;
 }
 
-.contact_way a:hover{
+.contact_grid a:hover{
     color:pink;
     text-decoration: none;
 }
@@ -679,12 +683,22 @@ footer {
     .contact_way{
         margin-top: 10%;
     }
+    .line-change {
+        display: none;
+    }
+
 }
 @media (min-width: 1000px) {
     #SSCC.page{
         height: 95%;
     }
     .openbtn{
+        display: none;
+    }
+}
+
+@media (min-width: 1460px) {
+    .line-change {
         display: none;
     }
 }
