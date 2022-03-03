@@ -518,6 +518,11 @@ footer {
     margin-bottom: 5%;
 }
 
+@media (min-width: 1460px) {
+    .line-change {
+        display: none;
+    }
+}
 
 /***** Benefit ******/
 
