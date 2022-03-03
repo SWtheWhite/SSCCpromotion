@@ -478,8 +478,9 @@ footer {
     text-align: left;
     padding: 15px;
     margin-top: 30px;
+    width: inherit;
 }
-
+/*
     .skills ul {
         list-style-type: none;
         margin: 0;
@@ -494,6 +495,18 @@ footer {
             margin: 0 7px 7px 0;
             padding: 7px;
         }
+    */
+
+    .skills p {
+        border: 1px solid #2D2747;
+        border-radius: 2px;
+        display: inline-grid;
+        font-size: 0.01vw;
+        margin: 0 7px 7px 0;
+        padding: 7px;
+    }
+
+
 
 #study-title {
     background-color: #222222;
