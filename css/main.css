@@ -13,10 +13,11 @@ h2{
     font-family: Montserrat, sans-serif;
 }
 
-a {
-    color: aliceblue;
+a{
     text-decoration-line: none;
 }
+
+
 
 .explain{
     position: absolute;
@@ -60,6 +61,11 @@ header {
     height: 100px;
     align-items: center;
     justify-content: center;
+}
+
+.floating a {
+    color: aliceblue;
+    text-decoration-line: none;
 }
 
 .title {
@@ -576,6 +582,11 @@ display: flex;
     grid-column: 2/4;
 }
 
+.contact_grid a{
+    color:#020042;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .contact_grid a:visited{
     color:gray;
