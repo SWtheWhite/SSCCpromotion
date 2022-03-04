@@ -576,10 +576,6 @@ display: flex;
     grid-column: 2/4;
 }
 
-.contact_link a:link{
-    color:black;
-    text-decoration: none;
-}
 
 .contact_grid a:visited{
     color:gray;
