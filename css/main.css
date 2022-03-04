@@ -412,14 +412,18 @@ display: flex;
     padding-bottom: 0;
 }
 
-/***** Study ******/
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+    .about_text p {
+        font-size: 15pt;
+    }
 
-.study_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 800px;
-}
+    /***** Study ******/
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+    .study_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        height: 800px;
+    }
 
     .study-card body {
         background-color: grey;
