@@ -601,6 +601,11 @@ display: flex;
     color:pink;
     text-decoration: none;
 }
+.detail_contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+}
 
 
 /***** Legacy ******/
@@ -679,12 +684,18 @@ display: flex;
         .card-container p {
             font-size: 3vw;
         }
-        .contact_grid {
-            display: block;
-            grid-template-columns: none;
-            grid-template-rows: none;
-            text-align: center;
-        }
+    .contact_grid {
+        display: block;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        text-align: center;
+    }
+    .detail_contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
         
     #Benefit p {
         font-size: 5vw;
