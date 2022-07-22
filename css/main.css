@@ -1,6 +1,12 @@
 /***** MAIN SETTING ******/
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body, html {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'BMJUA', sans-serif;
     height: 100%;
     margin: 0;
     user-select : none;
